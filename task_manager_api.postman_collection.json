@@ -1,0 +1,530 @@
+{
+  "info": {
+    "_postman_id": "4b258d30-125b-416a-8197-d8b5a4de1f18",
+    "name": "Task Manager API",
+    "description": "Postman collection for Task Manager API (JWT Auth)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49330658",
+    "_collection_link": "https://go.postman.co/collection/49330658-4b258d30-125b-416a-8197-d8b5a4de1f18?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/assigned-tasks/",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMzOTI4LCJpYXQiOjE3NzM4MzAzMjgsImp0aSI6ImU1OGNkNzZiZWE2MTQwMmY5M2I4YTZjZWExYzg3NjQ2IiwidXNlcl9pZCI6IjYifQ.1Fzikx-C1mSitseEDSHEWOz9c0HGlZO8oYRrIky3w8M",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/assigned-tasks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            "assigned-tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/assigned-tasks/",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMzOTI4LCJpYXQiOjE3NzM4MzAzMjgsImp0aSI6ImU1OGNkNzZiZWE2MTQwMmY5M2I4YTZjZWExYzg3NjQ2IiwidXNlcl9pZCI6IjYifQ.1Fzikx-C1mSitseEDSHEWOz9c0HGlZO8oYRrIky3w8M",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/assigned-tasks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            "assigned-tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/register/",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"user1\",\r\n  \"email\": \"user1@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/register/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "register",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/login/",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"user1@gmail.com\",\r\n  \"password\": \"123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/login/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "login",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/token/refresh/",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MzkxMjIyNywiaWF0IjoxNzczODI1ODI3LCJqdGkiOiI2MWYwYjU4YzgzZjQ0MTJhYjZhZjljNWM2ZDYyOWRiZiIsInVzZXJfaWQiOiI2In0.64VSNnhRhjYCsKhgKHxDnvWdclcN5UKG1WX8RiMcLB4\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/token/refresh/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "token",
+            "refresh",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMwMDk1LCJpYXQiOjE3NzM4MjY0OTUsImp0aSI6ImQ2MzRlZTZlYWE3MzQxZWRhYmUyNjljNTAzODRlNzk5IiwidXNlcl9pZCI6IjYifQ.NYvfOU5rWrmGGjWAM41VZUEwoS7JkmdjJ5UJLHlzaUk",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Test Task\",\r\n  \"description\": \"Task for testing\",\r\n  \"status\": \"completed\",\r\n  \"priority\": \"high\",\r\n  \"due_date\": \"2026-03-20\",\r\n  \"created_by\":\"4\",\r\n  \"assigned_to\": \"2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMxMTAzLCJpYXQiOjE3NzM4Mjc1MDMsImp0aSI6IjQxMWM0MmU1MGQ4NTQ0ODNhNDBjYmZlNjM2ZjY4OTUzIiwidXNlcl9pZCI6IjYifQ.ndmCxvQ3f2RY8e36P0oWuxk06gwFe7QiwKOwdGg6IJs",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/?",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            ""
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMxODg2LCJpYXQiOjE3NzM4MjgyODYsImp0aSI6IjkwZWEyOTg1OGRmYjQyNjFhNmViMTM0ZjlkM2UzNmUxIiwidXNlcl9pZCI6IjYifQ.MdLm8dvuk2qKgVXZrAjhqJZVJeCjypFg8OeQZfZGG4M",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/?status=completed",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            ""
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "completed"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMyMDU1LCJpYXQiOjE3NzM4Mjg0NTUsImp0aSI6IjhlNzA5ZjVlNDZkNzRmNjJiNWQxNmM4MGU2YWJiMWU2IiwidXNlcl9pZCI6IjYifQ.vkdfSKjgJjZOEBORIL9fHnx_53-6590eSyNFZbmAVWs",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/?priority=high",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            ""
+          ],
+          "query": [
+            {
+              "key": "priority",
+              "value": "high"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMyMTkwLCJpYXQiOjE3NzM4Mjg1OTAsImp0aSI6ImExZTQ0MWY3YTk4ZjRmN2JiNzJkNTYyM2VlZWM4MjVjIiwidXNlcl9pZCI6IjYifQ.JRxhejeFuwPHuvvAqBKueq-oXnKwp7j7pRgesoLMNrk",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/?search=test",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            ""
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "test"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/9/",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMyNTA3LCJpYXQiOjE3NzM4Mjg5MDcsImp0aSI6IjUxOGRkMGY4YjA3MTRiMjVhZWE4M2VmMTYzYjljNjk4IiwidXNlcl9pZCI6IjYifQ.Krb1-C5pr7owUUrP7Nu29bdXT1V37jxBFRF_jTUem4M",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Test Task\",\r\n  \"description\": \"Task for testing\",\r\n  \"status\": \"completed\",\r\n  \"priority\": \"high\",\r\n  \"due_date\": \"2026-03-20\",\r\n  \"created_by\":\"4\",\r\n  \"assigned_to\": \"2\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/9/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            "9",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMyNjIzLCJpYXQiOjE3NzM4MjkwMjMsImp0aSI6IjZlN2U1YzdkN2Y5ODQxYWZiZThkMzE5NjA5MjQyZDQ4IiwidXNlcl9pZCI6IjYifQ.9HxmXSFYmyY91AgXXDw22Ufp5XOPrQ7dWOkCLI7UYMs",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/1/",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMyOTQxLCJpYXQiOjE3NzM4MjkzNDEsImp0aSI6IjI1YTdhYjE3ODM0ZDQwN2Y5ZjU4NTgxZDlmZTQyZWE0IiwidXNlcl9pZCI6IjYifQ.gL5xIP9-6U3KQEpZDdvYWzJ4xPGAwJeAURReqOuh9OM",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/1/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            "1",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/my-tasks/",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMzMTQ5LCJpYXQiOjE3NzM4Mjk1NDksImp0aSI6IjMxYzQzODg2MjlmYjQ5ZjZhY2E1YWQ4Njk2ZjI0MjQ2IiwidXNlcl9pZCI6IjYifQ.3_rKr493sr_V0dzUiXReqRa46lp4AWdvvCr3M2jxmNY",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/my-tasks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            "my-tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "http://127.0.0.1:8000/api/tasks/assigned-tasks/",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczODMzMTQ5LCJpYXQiOjE3NzM4Mjk1NDksImp0aSI6IjMxYzQzODg2MjlmYjQ5ZjZhY2E1YWQ4Njk2ZjI0MjQ2IiwidXNlcl9pZCI6IjYifQ.3_rKr493sr_V0dzUiXReqRa46lp4AWdvvCr3M2jxmNY",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/tasks/assigned-tasks/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "tasks",
+            "assigned-tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
