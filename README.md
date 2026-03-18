@@ -126,12 +126,6 @@ GET /api/tasks/assigned_tasks/
 
 ---
 
-# Postman Collection
-
-Import provided JSON collection and test APIs.
-
----
-
 # Bonus Features
 
 * Filtering & search
