@@ -14,7 +14,7 @@ class TaskViewSet(viewsets.ModelViewSet):
     serializer_class = TaskSerializer
     permission_classes = [IsAuthenticated, IsTaskPermission]
 
-    # Filtering & search (your existing code)
+    # Filtering and searching
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
     filterset_fields = ['status', 'priority']
     search_fields = ['title', 'description']
@@ -25,7 +25,7 @@ class TaskViewSet(viewsets.ModelViewSet):
             Q(created_by=user) | Q(assigned_to=user)
         ).distinct()
 
-    # Auto-set creator
+   
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user)
 
