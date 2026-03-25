@@ -32,7 +32,7 @@ urlpatterns = [
     # Tasks app
     path('api/', include('tasks.urls')),
 
-    # 🔥 DRF Spectacular - Swagger Documentation
+    # DRF Spectacular - Swagger Documentation
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),  # JSON Schema
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),  # Interactive Docs
 ]
